@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | AXIS 3D Culiacán</title>
+  <meta name="description" content="Ponte en contacto con AXIS 3D para cotizar impresión 3D, diseño CAD o producción en serie en Culiacán.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto | AXIS 3D Culiacán">
+  <meta property="og:description" content="Solicita una cotización de impresión 3D, diseño CAD o replicación de piezas en Culiacán.">
+  <meta property="og:url" content="https://www.axis3d.mx/contacto.html">
+  <meta property="og:image" content="https://www.axis3d.mx/assets/img/hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contacto | AXIS 3D Culiacán">
+  <meta name="twitter:description" content="Resolvemos tus proyectos de impresión 3D en Culiacán, Sinaloa.">
+  <link rel="canonical" href="https://www.axis3d.mx/contacto.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+  <link rel="alternate icon" href="/assets/img/logo.svg">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+  <header class="top-header">
+    <div class="container flex-between">
+      <a class="logo" href="index.html" aria-label="Inicio AXIS 3D">
+        <img src="/assets/img/logo.svg" alt="AXIS 3D" width="140" height="40">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="sr-only">Abrir menú</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#formulario">Solicitar cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li aria-current="page">Contacto</li>
+    </ol>
+  </nav>
+
+  <main id="contenido-principal">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1>Hablemos de tu próximo proyecto</h1>
+        <p>Completa el formulario y nos pondremos en contacto el mismo día hábil para definir materiales, costos y tiempos de entrega.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="formulario">
+      <div class="container contact-grid">
+        <div>
+          <h2>Formulario de contacto</h2>
+          <div id="mensajeFormulario" role="status" aria-live="polite"></div>
+          <form class="form" action="contact.php" method="post" novalidate enctype="application/x-www-form-urlencoded">
+            <input type="text" name="empresa" id="empresa" autocomplete="off" tabindex="-1" aria-hidden="true">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required maxlength="120" placeholder="Ej. Laura Martínez">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" required maxlength="160" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" maxlength="20" placeholder="667 000 0000">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" required maxlength="1200" rows="4" placeholder="Cuéntanos sobre tus piezas, cantidades y materiales"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="archivo">Archivo de referencia</label>
+              <input type="file" id="archivo" name="archivo" accept=".stl,.step,.stp,.obj,.zip">
+              <small>Si tu hosting no permite subir archivos, adjunta tus STL/STEP por correo tras enviar el formulario.</small>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" id="acepto" name="acepto" required>
+              <label for="acepto">Acepto el <a href="privacidad.html">aviso de privacidad</a>.</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h2>Información de contacto</h2>
+          <p>AXIS 3D · Culiacán, Sinaloa<br>Impresión 3D, diseño y producción a tu medida.</p>
+          <ul>
+            <li>Correo: <a href="mailto:contacto@axis3d.mx">contacto@axis3d.mx</a></li>
+            <li>WhatsApp: <a href="https://wa.me/526673163086?text=Hola%20AXIS%203D,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">+52 667 316 3086</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/axis3d_cln/" target="_blank" rel="noopener">@axis3d_cln</a></li>
+          </ul>
+          <img src="/assets/img/placeholder.webp" alt="Mapa estático de Culiacán" loading="lazy" width="400" height="300">
+          <a class="btn btn-outline" href="https://wa.me/526673163086?text=Hola%20AXIS%203D,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>AXIS 3D · Culiacán, Sinaloa</strong>
+        <p>Impresión 3D, diseño y producción a tu medida en Culiacán.</p>
+      </div>
+      <div>
+        <ul>
+          <li>Correo: <a href="mailto:contacto@axis3d.mx">contacto@axis3d.mx</a></li>
+          <li>WhatsApp: <a href="https://wa.me/526673163086?text=Hola%20AXIS%203D,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">+52 667 316 3086</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/axis3d_cln/" target="_blank" rel="noopener">@axis3d_cln</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="privacidad.html">Aviso de privacidad</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+        <p>© <span id="anioFooter"></span> AXIS 3D. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/526673163086?text=Hola%20AXIS%203D,%20quiero%20una%20cotizaci%C3%B3n" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp AXIS 3D">
+    <span class="sr-only">WhatsApp AXIS 3D</span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
