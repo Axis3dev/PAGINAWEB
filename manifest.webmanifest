@@ -1,0 +1,17 @@
+{
+  "name": "AXIS 3D",
+  "short_name": "AXIS 3D",
+  "description": "Impresión 3D, diseño y producción a tu medida en Culiacán.",
+  "lang": "es-MX",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#0EA5E9",
+  "icons": [
+    {
+      "src": "/assets/img/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}

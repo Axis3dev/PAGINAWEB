@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact.php
+Allow: /
+Sitemap: https://www.axis3d.mx/sitemap.xml
