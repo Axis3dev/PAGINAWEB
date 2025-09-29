@@ -2,13 +2,42 @@
 const d=document;
 const body=d.body;
 const docEl=d.documentElement;
-const toggle=d.querySelector(".nav-toggle");
-const menu=d.getElementById("primary-nav");
-if(toggle&&menu){const closeMenu=()=>{menu.classList.remove("is-open");toggle.setAttribute("aria-expanded","false");docEl.classList.remove("no-scroll");};
-toggle.addEventListener("click",()=>{const open=menu.classList.toggle("is-open");toggle.setAttribute("aria-expanded",open?"true":"false");docEl.classList.toggle("no-scroll",open);});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMenu();});
-menu.addEventListener("click",e=>{const a=e.target.closest("a");if(a)closeMenu();});
-window.addEventListener("resize",()=>{if(window.innerWidth>=1024)closeMenu();});}
+(function(){
+  const btn = d.querySelector('.nav-toggle');
+  const menu = d.getElementById('primary-nav');
+  if(!btn || !menu) return;
+
+  const lock = on => docEl.classList.toggle('no-scroll', !!on);
+  const closeMenu = () => {
+    menu.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    lock(false);
+  };
+
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    lock(open);
+  });
+
+  menu.addEventListener('click', e => {
+    if(e.target.closest('a')){
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if(window.innerWidth >= 1024){
+      closeMenu();
+    }
+  });
+
+  d.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){
+      closeMenu();
+    }
+  });
+})();
 const yearEl=d.getElementById("anioFooter");if(yearEl){yearEl.textContent=String(new Date().getFullYear());}
 const floatBtn=d.querySelector(".whatsapp-float");if(floatBtn){floatBtn.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){floatBtn.click();}});}
 const modals=d.querySelectorAll(".modal");const modalTriggers=d.querySelectorAll("[data-modal]");let lastFocused=null;function closeModal(modal){if(!modal)return;modal.setAttribute("hidden","hidden");body.classList.remove("modal-open");if(lastFocused){lastFocused.focus();}}

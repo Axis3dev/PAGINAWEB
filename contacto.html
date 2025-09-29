@@ -23,22 +23,38 @@
 </head>
 <body>
   <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
-  <header class="top-header">
-    <div class="container flex-between">
-      <a class="logo" href="index.html" aria-label="Inicio AXIS 3D">
-        <img src="/assets/img/logo.svg" alt="AXIS 3D" width="140" height="40">
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="logo" aria-label="AXIS 3D">
+        <img src="/assets/img/logo.svg" alt="AXIS 3D">
       </a>
+
       <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
+
       <nav id="primary-nav" class="nav-menu" role="navigation" aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="portafolio.html">Portafolio</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
+        <ul class="nav-links">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/servicios.html">Servicios</a></li>
+          <li><a href="/portafolio.html">Portafolio</a></li>
+          <li><a href="/contacto.html" class="active">Contacto</a></li>
+          <li><a class="btn-cta" href="https://wa.me/526670000000?text=Hola%20AXIS%203D,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Solicitar cotización</a></li>
         </ul>
-        <a class="btn btn-primary" href="#formulario">Solicitar cotización</a>
+
+        <div class="nav-utils" aria-label="Acciones rápidas">
+          <button class="icon-btn" aria-label="Notificaciones">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M12 22a2 2 0 0 0 2-2H10a2 2 0 0 0 2 2ZM19 16v-5a7 7 0 1 0-14 0v5l-2 2v1h18v-1l-2-2Z"/></svg>
+            <span class="badge" aria-hidden="true">1</span>
+          </button>
+          <button class="icon-btn" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M21 21l-4.3-4.3M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"/></svg>
+          </button>
+          <button class="icon-btn profile" aria-label="Cuenta">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-5 0-9 2.5-9 5v1h18v-1c0-2.5-4-5-9-5Z"/></svg>
+            <svg viewBox="0 0 24 24" class="caret"><path d="M7 10l5 5 5-5"/></svg>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
@@ -126,6 +142,14 @@
           <li><a href="privacidad.html">Aviso de privacidad</a></li>
           <li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
+        <div class="social-links" aria-label="Redes sociales">
+          <a href="https://www.tiktok.com/@axis3d_cln" target="_blank" rel="noopener" aria-label="TikTok AXIS 3D" class="social tiktok">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M14 3c.7 2.4 2.2 4 4.5 4.3V10c-1.7 0-3.1-.5-4.5-1.5V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3a2.9 2.9 0 0 0-1-.1 3 3 0 1 0 3 3V3h3z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@Axis3D-mx?app=desktop" target="_blank" rel="noopener" aria-label="YouTube AXIS 3D" class="social youtube">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M23 7s0-3-3-3H4C1 4 1 7 1 7s0 3 0 6 3 3 3 3h16s3 0 3-3 0-6 0-6Zm-13 8V8l8 4-8 4Z"/></svg>
+          </a>
+        </div>
         <p>© <span id="anioFooter"></span> AXIS 3D. Todos los derechos reservados.</p>
       </div>
     </div>
