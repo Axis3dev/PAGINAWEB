@@ -159,3 +159,32 @@ tr:nth-child(even){background:rgba(148,163,184,.1)}
 @media (max-width:600px){.hero h1{font-size:2.2rem}.container{padding:2.5rem 0}.cta-whatsapp .container{flex-direction:column;align-items:flex-start;gap:1rem}.flex-between{flex-direction:column;align-items:flex-start}.portfolio-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.case-grid{grid-template-columns:1fr}}
 
 
+/* ===== Header: tamaño sobrio y consistente */
+.site-header .logo img{
+  width: clamp(120px, 12vw, 160px);
+  max-height: 48px;
+  height: auto;
+}
+
+/* ===== Hero: contenedor con tope + logo responsivo */
+.hero-brand{
+  width: min(420px, 60vw);
+  margin-inline: auto;
+}
+.hero-brand img{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 28vh;
+  object-fit: contain;
+}
+
+/* Títulos del hero más balanceados */
+.hero h1{ font-size: clamp(22px, 5.2vw, 36px); }
+.hero p{  font-size: clamp(14px, 2.6vw, 18px); }
+
+@media (max-width: 768px){
+  .site-header .logo img{ width: clamp(110px, 30vw, 150px); max-height: 40px; }
+  .hero-brand{ width: min(300px, 70vw); }
+  .hero-brand img{ max-height: 22vh; }
+}
