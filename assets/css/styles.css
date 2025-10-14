@@ -1,0 +1,10 @@
+.logo img {
+  width: clamp(110px, 14vw, 150px);
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: clamp(130px, 34vw, 180px);
+  }
+}
