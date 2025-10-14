@@ -1,15 +1,24 @@
-:root{
+.contacto-page{
   --navy:#082d47;
   --navy-2:#11384F;
   --orange:#e74f26;
   --text:#EAF2F7;
   --muted:#A7B6C3;
   --card:#0F2330;
+  background:var(--navy);
+  color:var(--text);
+  font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  max-width:1200px;
+  margin:0 auto;
+  padding:28px;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
 
-.contacto-page{background:var(--navy);color:var(--text);font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+body{margin:0;background:#082d47;color:#EAF2F7;font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+
 .contacto-page a{color:var(--text);text-decoration:none}
-.contacto-page.wrap{max-width:1200px;margin:0 auto;padding:28px}
 .contacto-page header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
 .contacto-page .mark{display:flex;align-items:center;gap:12px}
 .contacto-page .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--orange),#ff7c42);display:grid;place-items:center;font-weight:800;color:#111}
@@ -55,12 +64,12 @@
 .contacto-page .aside{display:grid;grid-template-columns:1fr 120px;gap:12px;align-items:center}
 .contacto-page .qr{width:120px;height:120px;border-radius:12px;background:#fff;display:grid;place-items:center;color:#111;font-size:12px;font-weight:700;text-align:center;padding:12px}
 
-.contacto-page footer{margin:28px 0 8px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.contacto-page footer{margin:28px 0 8px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:auto}
 .contacto-page .social{display:flex;gap:12px}
 .contacto-page .badge{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.12)}
 
 @media (max-width:600px){
-  .contacto-page.wrap{padding:20px}
+  .contacto-page{padding:20px}
   .contacto-page .btns{grid-template-columns:1fr}
   .contacto-page .aside{grid-template-columns:1fr;justify-items:start}
   .contacto-page .qr{width:100%;height:auto;min-height:120px}
